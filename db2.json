@@ -1,0 +1,104 @@
+{
+	"subjectAttendance": [
+		{
+			"personId": "PER-JR-001",
+			"email": "jose.roman@est.ucacue.edu.ec",
+			"studentFullName": "José Alberto Román Valdiviezo",
+			"academicPeriod": "Marzo 2026 – Agosto 2026",
+			"careers": [
+				{
+					"studentId": "2019-SW-0345",
+					"careerName": "Ingeniería de Software",
+					"programType": "CAREER",
+					"modality": "Presencial",
+					"campus": "Matriz Cuenca",
+					"cycleNumber": 8,
+					"subjects": [
+						{
+							"subjectId": "SW-ARQ-702",
+							"subjectName": "Arquitectura de Software",
+							"hasRecords": true,
+							"absences": 13,
+							"totalSessions": 40,
+							"absencePercentage": 32.5,
+							"academicStatus": "LOST"
+						},
+						{
+							"subjectId": "SW-BD-701",
+							"subjectName": "Bases de Datos II",
+							"hasRecords": true,
+							"absences": 3,
+							"totalSessions": 40,
+							"absencePercentage": 7.5,
+							"academicStatus": "ACTIVE"
+						},
+						{
+							"subjectId": "SW-OPT-703",
+							"subjectName": "Optativa III: IA Aplicada",
+							"hasRecords": false,
+							"absences": null,
+							"totalSessions": null,
+							"absencePercentage": null,
+							"academicStatus": "ACTIVE"
+						}
+					]
+				},
+				{
+					"studentId": "2024-ENG-5521",
+					"careerName": "Suficiencia en Inglés",
+					"programType": "LANGUAGE",
+					"modality": "En línea",
+					"campus": "Matriz Cuenca",
+					"cycleNumber": 3,
+					"subjects": [
+						{
+							"subjectId": "ENG-B1-2",
+							"subjectName": "Inglés B1.2",
+							"hasRecords": true,
+							"absences": 5,
+							"totalSessions": 30,
+							"absencePercentage": 16.67,
+							"academicStatus": "AT_RISK"
+						}
+					]
+				}
+			]
+		},
+		{
+			"personId": "PER-NEW-002",
+			"email": "ana.torres@est.ucacue.edu.ec",
+			"studentFullName": "Ana Belén Torres Guamán",
+			"academicPeriod": "Marzo 2026 – Agosto 2026",
+			"careers": [
+				{
+					"studentId": "2026-MED-1180",
+					"careerName": "Medicina",
+					"programType": "CAREER",
+					"modality": "Presencial",
+					"campus": "Matriz Cuenca",
+					"cycleNumber": 1,
+					"subjects": [
+						{
+							"subjectId": "MED-ANA-101",
+							"subjectName": "Anatomía I",
+							"hasRecords": false,
+							"absences": null,
+							"totalSessions": null,
+							"absencePercentage": null,
+							"academicStatus": "ACTIVE"
+						},
+						{
+							"subjectId": "MED-BIO-101",
+							"subjectName": "Biología Celular",
+							"hasRecords": false,
+							"absences": null,
+							"totalSessions": null,
+							"absencePercentage": null,
+							"academicStatus": "ACTIVE"
+						}
+					]
+				}
+			]
+		}
+	]
+}

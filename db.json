@@ -1,0 +1,79 @@
+{
+	"students": [
+		{
+			"isEnrolled": true,
+			"firstName": "María José",
+			"lastName": "Peralta Once",
+			"email": "mjperalta@est.ucacue.edu.ec",
+			"QRtoken": null,
+			"expirationDate": "30 de agosto de 2026",
+			"picture": null,
+			"careers": [
+				{
+					"careerName": "Derecho",
+					"cycleNumber": 5,
+					"academicPeriod": "Marzo 2026 – Agosto 2026\nPregrado",
+					"campusName": "Matriz Cuenca",
+					"modalityName": "Presencial"
+				},
+				{
+					"careerName": "Inglés",
+					"cycleNumber": 3,
+					"academicPeriod": "Marzo 2026 – Agosto 2026\nPregrado",
+					"campusName": "Matriz Cuenca",
+					"modalityName": "Híbrida"
+				}
+			]
+		},
+		{
+			"isEnrolled": true,
+			"firstName": "José Alberto",
+			"lastName": "Román Valdiviezo",
+			"email": "jose.roman@est.ucacue.edu.ec",
+			"QRtoken": "",
+			"expirationDate": "30 de agosto de 2026",
+			"picture": "",
+			"careers": [
+				{
+					"careerName": "Ingeniería de Software",
+					"cycleNumber": 10,
+					"academicPeriod": "Marzo 2026 – Agosto 2026\nPregrado",
+					"campusName": "Matriz Cuenca",
+					"modalityName": "Presencial"
+				},
+				{
+					"careerName": "Inglés",
+					"cycleNumber": 1,
+					"academicPeriod": "Marzo 2026 – Agosto 2026\nPregrado",
+					"campusName": "Matriz Cuenca",
+					"modalityName": "Híbrida"
+				}
+			]
+		},
+		{
+			"isEnrolled": true,
+			"firstName": "MICHELLE ANDREA",
+			"lastName": "ZHUNAULA LUCERO",
+			"email": "michelle.zhunaula@ucacue.edu.ec",
+			"QRtoken": "",
+			"expirationDate": "30 de agosto de 2026",
+			"picture": "",
+			"careers": [
+				{
+					"careerName": "Ingeniería de Software",
+					"cycleNumber": 10,
+					"academicPeriod": "Marzo 2026 – Agosto 2026\nPregrado",
+					"campusName": "Matriz Cuenca",
+					"modalityName": "Presencial"
+				},
+				{
+					"careerName": "Inglés",
+					"cycleNumber": 1,
+					"academicPeriod": "Marzo 2026 – Agosto 2026\nPregrado",
+					"campusName": "Matriz Cuenca",
+					"modalityName": "Híbrida"
+				}
+			]
+		}
+	]
+}
