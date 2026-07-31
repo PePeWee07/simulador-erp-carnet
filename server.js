@@ -6,6 +6,7 @@ const multer = require("multer");
 const PORT = 3001;
 const CREDENTIAL_PATH = "/api/student-card/credential";
 const PHOTO_VALIDATION_PATH = "/api/student-card/validate-photo";
+const STUDENT_CAREER_PATH = "/api/academic/student-career";
 const SUBJECT_ATTENDANCE_PATH = "/api/academic/subject-attendance";
 const NOT_ENROLLED_RESPONSE = { isEnrolled: false };
 
@@ -14,7 +15,7 @@ const PHOTO_IS_VALID = true;
 
 const server = jsonServer.create();
 const router = jsonServer.router(path.join(__dirname, "db.json"));
-const attendanceRouter = jsonServer.router(path.join(__dirname, "db2.json"));
+const academicRouter = jsonServer.router(path.join(__dirname, "db2.json"));
 const middlewares = jsonServer.defaults();
 const upload = multer({ storage: multer.memoryStorage() });
 
@@ -32,11 +33,25 @@ function findStudentByEmail(email) {
 		.find((student) => student.email === email);
 }
 
-function findAttendanceByPersonId(personId) {
-	return attendanceRouter.db
+function findCareerByToken(token) {
+	return academicRouter.db
+		.get("studentCareer")
+		.value()
+		.find((record) => record.token === token);
+}
+
+function findSubjectsByStudentId(studentId) {
+	return academicRouter.db
 		.get("subjectAttendance")
 		.value()
-		.find((record) => record.personId === personId);
+		.find((record) => String(record.alumnoId) === String(studentId));
+}
+
+function extractBearerToken(authorizationHeader) {
+	if (!authorizationHeader) {
+		return null;
+	}
+	return authorizationHeader.replace(/^Bearer\s+/i, "");
 }
 
 server.use(middlewares);
@@ -81,16 +96,36 @@ server.post(
 	}
 );
 
-server.get(SUBJECT_ATTENDANCE_PATH, (request, response) => {
-	const record = findAttendanceByPersonId(request.query.personId);
+server.get(STUDENT_CAREER_PATH, (request, response) => {
+	const token = extractBearerToken(request.headers.authorization);
+	if (!token) {
+		return response.status(401).json({ message: "Missing bearer token" });
+	}
+
+	const record = findCareerByToken(token);
 	if (!record) {
 		return response
 			.status(404)
-			.json({ message: "No attendance found for personId" });
+			.json({ message: "No careers found for token" });
 	}
 
-	const { personId, ...payload } = record;
-	return response.json(payload);
+	return response.json(record.careers);
+});
+
+server.get(SUBJECT_ATTENDANCE_PATH, (request, response) => {
+	const token = extractBearerToken(request.headers.authorization);
+	if (!token) {
+		return response.status(401).json({ message: "Missing bearer token" });
+	}
+
+	const record = findSubjectsByStudentId(request.query.alumnoId);
+	if (!record) {
+		return response
+			.status(404)
+			.json({ message: "No subjects found for alumnoId" });
+	}
+
+	return response.json(record.subjects);
 });
 
 server.use(router);
@@ -98,5 +133,6 @@ server.use(router);
 server.listen(PORT, () => {
 	console.log(`Simulador ERP -> http://localhost:${PORT}`);
 	console.log(`  carnet:     ${CREDENTIAL_PATH}?email=...`);
-	console.log(`  asistencia: ${SUBJECT_ATTENDANCE_PATH}?personId=...`);
+	console.log(`  carreras:   ${STUDENT_CAREER_PATH}  (header Authorization: Bearer <token>)`);
+	console.log(`  materias:   ${SUBJECT_ATTENDANCE_PATH}?alumnoId=...  (header Authorization: Bearer <token>)`);
 });

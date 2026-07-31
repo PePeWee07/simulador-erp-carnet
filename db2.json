@@ -1,102 +1,334 @@
 {
-	"subjectAttendance": [
+	"studentCareer": [
 		{
-			"personId": "PER-JR-001",
-			"email": "jose.roman@est.ucacue.edu.ec",
-			"studentFullName": "José Alberto Román Valdiviezo",
-			"academicPeriod": "Marzo 2026 – Agosto 2026",
+			"token": "faketoken:jose.roman@est.ucacue.edu.ec",
 			"careers": [
 				{
-					"studentId": "2019-SW-0345",
-					"careerName": "Ingeniería de Software",
-					"programType": "CAREER",
-					"modality": "Presencial",
-					"campus": "Matriz Cuenca",
-					"cycleNumber": 8,
-					"subjects": [
-						{
-							"subjectId": "SW-ARQ-702",
-							"subjectName": "Arquitectura de Software",
-							"hasRecords": true,
-							"absences": 13,
-							"totalSessions": 40,
-							"absencePercentage": 32.5,
-							"academicStatus": "LOST"
-						},
-						{
-							"subjectId": "SW-BD-701",
-							"subjectName": "Bases de Datos II",
-							"hasRecords": true,
-							"absences": 3,
-							"totalSessions": 40,
-							"absencePercentage": 7.5,
-							"academicStatus": "ACTIVE"
-						},
-						{
-							"subjectId": "SW-OPT-703",
-							"subjectName": "Optativa III: IA Aplicada",
-							"hasRecords": false,
-							"absences": null,
-							"totalSessions": null,
-							"absencePercentage": null,
-							"academicStatus": "ACTIVE"
-						}
-					]
+					"alumnoId": 1,
+					"persona": "Jose Roman",
+					"numeroDocumento": "0102030405",
+					"nombreCompleto": "ROMAN VALDIVIEZO JOSE ALBERTO",
+					"correoInstitucional": "jose.roman@est.ucacue.edu.ec",
+					"curriculaId": 10,
+					"curriculaDescripcion": "MALLA 2020",
+					"nivelAcademicoId": 2,
+					"nivelAcademicoDescripcion": "GRADO",
+					"sedeId": 1,
+					"sedeDescripcion": "MATRIZ CUENCA",
+					"estructuraId": 198,
+					"estructuraDescripcion": "INGENIERIA DE SOFTWARE",
+					"modalidadId": 3,
+					"modalidadDescripcion": "PRESENCIAL",
+					"ciclo": 8,
+					"academicPeriod": "Marzo 2026 – Agosto 2026"
 				},
 				{
-					"studentId": "2024-ENG-5521",
-					"careerName": "Suficiencia en Inglés",
-					"programType": "LANGUAGE",
-					"modality": "En línea",
-					"campus": "Matriz Cuenca",
-					"cycleNumber": 3,
-					"subjects": [
-						{
-							"subjectId": "ENG-B1-2",
-							"subjectName": "Inglés B1.2",
-							"hasRecords": true,
-							"absences": 5,
-							"totalSessions": 30,
-							"absencePercentage": 16.67,
-							"academicStatus": "AT_RISK"
-						}
-					]
+					"alumnoId": 2,
+					"persona": "Jose Roman",
+					"numeroDocumento": "0102030405",
+					"nombreCompleto": "ROMAN VALDIVIEZO JOSE ALBERTO",
+					"correoInstitucional": "jose.roman@est.ucacue.edu.ec",
+					"curriculaId": 55,
+					"curriculaDescripcion": "IDIOMAS 2021",
+					"nivelAcademicoId": 4,
+					"nivelAcademicoDescripcion": "IDIOMAS",
+					"sedeId": 1,
+					"sedeDescripcion": "MATRIZ CUENCA",
+					"estructuraId": 199,
+					"estructuraDescripcion": "SUFICIENCIA EN INGLES",
+					"modalidadId": 2,
+					"modalidadDescripcion": "EN LINEA",
+					"ciclo": 3,
+					"academicPeriod": "Marzo 2026 – Agosto 2026"
 				}
 			]
 		},
 		{
-			"personId": "PER-NEW-002",
-			"email": "ana.torres@est.ucacue.edu.ec",
-			"studentFullName": "Ana Belén Torres Guamán",
-			"academicPeriod": "Marzo 2026 – Agosto 2026",
+			"token": "faketoken:michelle.zhunaula@ucacue.edu.ec",
 			"careers": [
 				{
-					"studentId": "2026-MED-1180",
-					"careerName": "Medicina",
-					"programType": "CAREER",
-					"modality": "Presencial",
-					"campus": "Matriz Cuenca",
-					"cycleNumber": 1,
-					"subjects": [
-						{
-							"subjectId": "MED-ANA-101",
-							"subjectName": "Anatomía I",
-							"hasRecords": false,
-							"absences": null,
-							"totalSessions": null,
-							"absencePercentage": null,
-							"academicStatus": "ACTIVE"
-						},
-						{
-							"subjectId": "MED-BIO-101",
-							"subjectName": "Biología Celular",
-							"hasRecords": false,
-							"absences": null,
-							"totalSessions": null,
-							"absencePercentage": null,
-							"academicStatus": "ACTIVE"
-						}
-					]
+					"alumnoId": 3,
+					"persona": "Michelle Zhunaula",
+					"numeroDocumento": "0107080910",
+					"nombreCompleto": "ZHUNAULA LUCERO MICHELLE ANDREA",
+					"correoInstitucional": "michelle.zhunaula@est.ucacue.edu.ec",
+					"curriculaId": 10,
+					"curriculaDescripcion": "MALLA 2020",
+					"nivelAcademicoId": 2,
+					"nivelAcademicoDescripcion": "GRADO",
+					"sedeId": 1,
+					"sedeDescripcion": "MATRIZ CUENCA",
+					"estructuraId": 198,
+					"estructuraDescripcion": "INGENIERIA DE SOFTWARE",
+					"modalidadId": 3,
+					"modalidadDescripcion": "PRESENCIAL",
+					"ciclo": 8,
+					"academicPeriod": "Marzo 2026 – Agosto 2026"
+				},
+				{
+					"alumnoId": 4,
+					"persona": "Michelle Zhunaula",
+					"numeroDocumento": "0107080910",
+					"nombreCompleto": "ZHUNAULA LUCERO MICHELLE ANDREA",
+					"correoInstitucional": "michelle.zhunaula@est.ucacue.edu.ec",
+					"curriculaId": 30,
+					"curriculaDescripcion": "MALLA 2022",
+					"nivelAcademicoId": 2,
+					"nivelAcademicoDescripcion": "GRADO",
+					"sedeId": 1,
+					"sedeDescripcion": "MATRIZ CUENCA",
+					"estructuraId": 195,
+					"estructuraDescripcion": "DERECHO",
+					"modalidadId": 3,
+					"modalidadDescripcion": "PRESENCIAL",
+					"ciclo": 4,
+					"academicPeriod": "Marzo 2026 – Agosto 2026"
+				}
+			]
+		},
+		{
+			"token": "faketoken:ana.torres@est.ucacue.edu.ec",
+			"careers": [
+				{
+					"alumnoId": 5,
+					"persona": "Ana Torres",
+					"numeroDocumento": "0103040506",
+					"nombreCompleto": "TORRES GUAMAN ANA BELEN",
+					"correoInstitucional": "ana.torres@est.ucacue.edu.ec",
+					"curriculaId": 70,
+					"curriculaDescripcion": "MALLA 2025",
+					"nivelAcademicoId": 2,
+					"nivelAcademicoDescripcion": "GRADO",
+					"sedeId": 1,
+					"sedeDescripcion": "MATRIZ CUENCA",
+					"estructuraId": 197,
+					"estructuraDescripcion": "MEDICINA",
+					"modalidadId": 3,
+					"modalidadDescripcion": "PRESENCIAL",
+					"ciclo": 1,
+					"academicPeriod": "Marzo 2026 – Agosto 2026"
+				}
+			]
+		}
+	],
+	"subjectAttendance": [
+		{
+			"alumnoId": 1,
+			"subjects": [
+				{
+					"id": 3771,
+					"codigo": "000065",
+					"nombre": "ARQUITECTURA DE SOFTWARE",
+					"creditos": "4.75",
+					"seccion": "8A",
+					"numeroSesionesTotales": 40,
+					"numeroSesionesFaltas": 2,
+					"turno": "M",
+					"docente": "COBOS MORA SANDRA LUCIA",
+					"porcentajeFaltas": "5.00",
+					"promedioNotaFinal": "15.00",
+					"activo": 1,
+					"color": "#2E7D32"
+				},
+				{
+					"id": 3772,
+					"codigo": "000066",
+					"nombre": "PROGRAMACION ORIENTADA A OBJETOS",
+					"creditos": "5.00",
+					"seccion": "8A",
+					"numeroSesionesTotales": 40,
+					"numeroSesionesFaltas": 7,
+					"turno": "M",
+					"docente": "PEREZ LOPEZ ANA MARIA",
+					"porcentajeFaltas": "17.50",
+					"promedioNotaFinal": "13.50",
+					"activo": 1,
+					"color": "#2E7D32"
+				},
+				{
+					"id": 3773,
+					"codigo": "000067",
+					"nombre": "BASES DE DATOS II",
+					"creditos": "5.00",
+					"seccion": "8B",
+					"numeroSesionesTotales": 40,
+					"numeroSesionesFaltas": 10,
+					"turno": "M",
+					"docente": "GOMEZ TORRES LUIS FERNANDO",
+					"porcentajeFaltas": "25.00",
+					"promedioNotaFinal": "12.00",
+					"activo": 1,
+					"color": "#F9A825"
+				},
+				{
+					"id": 3774,
+					"codigo": "000068",
+					"nombre": "SIST. DE INFORMACION GEOGRAFICA",
+					"creditos": "4.75",
+					"seccion": "5B",
+					"numeroSesionesTotales": 35,
+					"numeroSesionesFaltas": 13,
+					"turno": "M",
+					"docente": "CAJAMARCA ZUÑIGA CESAR DAVID",
+					"porcentajeFaltas": "37.14",
+					"promedioNotaFinal": "10.00",
+					"activo": 1,
+					"color": "#C62828"
+				},
+				{
+					"id": 3775,
+					"codigo": "000069",
+					"nombre": "OPTATIVA RETIRADA (NO DEBE SALIR)",
+					"creditos": "3.00",
+					"seccion": "8A",
+					"numeroSesionesTotales": 20,
+					"numeroSesionesFaltas": 0,
+					"turno": "M",
+					"docente": "N/A",
+					"porcentajeFaltas": "0.00",
+					"promedioNotaFinal": "0.00",
+					"activo": 0,
+					"color": "#2E7D32"
+				}
+			]
+		},
+		{
+			"alumnoId": 2,
+			"subjects": [
+				{
+					"id": 3781,
+					"codigo": "ENG-201",
+					"nombre": "INGLES B1.2",
+					"creditos": "3.00",
+					"seccion": "N3",
+					"numeroSesionesTotales": 30,
+					"numeroSesionesFaltas": 5,
+					"turno": "V",
+					"docente": "SMITH JOHN",
+					"porcentajeFaltas": "16.67",
+					"promedioNotaFinal": "14.00",
+					"activo": 1,
+					"color": "#2E7D32"
+				},
+				{
+					"id": 3782,
+					"codigo": "ENG-202",
+					"nombre": "CONVERSATION WORKSHOP",
+					"creditos": "2.00",
+					"seccion": "N3",
+					"numeroSesionesTotales": 30,
+					"numeroSesionesFaltas": 9,
+					"turno": "V",
+					"docente": "SMITH JOHN",
+					"porcentajeFaltas": "30.00",
+					"promedioNotaFinal": "11.00",
+					"activo": 1,
+					"color": "#C62828"
+				}
+			]
+		},
+		{
+			"alumnoId": 3,
+			"subjects": [
+				{
+					"id": 3791,
+					"codigo": "000065",
+					"nombre": "ARQUITECTURA DE SOFTWARE",
+					"creditos": "4.75",
+					"seccion": "8A",
+					"numeroSesionesTotales": 40,
+					"numeroSesionesFaltas": 3,
+					"turno": "M",
+					"docente": "COBOS MORA SANDRA LUCIA",
+					"porcentajeFaltas": "7.50",
+					"promedioNotaFinal": "16.00",
+					"activo": 1,
+					"color": "#2E7D32"
+				},
+				{
+					"id": 3792,
+					"codigo": "000066",
+					"nombre": "PROGRAMACION ORIENTADA A OBJETOS",
+					"creditos": "5.00",
+					"seccion": "8A",
+					"numeroSesionesTotales": 40,
+					"numeroSesionesFaltas": 11,
+					"turno": "M",
+					"docente": "PEREZ LOPEZ ANA MARIA",
+					"porcentajeFaltas": "27.50",
+					"promedioNotaFinal": "12.50",
+					"activo": 1,
+					"color": "#F9A825"
+				}
+			]
+		},
+		{
+			"alumnoId": 4,
+			"subjects": [
+				{
+					"id": 3801,
+					"codigo": "DER-401",
+					"nombre": "DERECHO PENAL I",
+					"creditos": "4.00",
+					"seccion": "4A",
+					"numeroSesionesTotales": 40,
+					"numeroSesionesFaltas": 2,
+					"turno": "M",
+					"docente": "VELEZ SANCHEZ MARIA",
+					"porcentajeFaltas": "5.00",
+					"promedioNotaFinal": "15.50",
+					"activo": 1,
+					"color": "#2E7D32"
+				},
+				{
+					"id": 3802,
+					"codigo": "DER-402",
+					"nombre": "DERECHO CIVIL: OBLIGACIONES",
+					"creditos": "4.00",
+					"seccion": "4A",
+					"numeroSesionesTotales": 40,
+					"numeroSesionesFaltas": 18,
+					"turno": "M",
+					"docente": "ORTIZ PEÑA CARLOS",
+					"porcentajeFaltas": "45.00",
+					"promedioNotaFinal": "9.00",
+					"activo": 1,
+					"color": "#C62828"
+				}
+			]
+		},
+		{
+			"alumnoId": 5,
+			"subjects": [
+				{
+					"id": 3811,
+					"codigo": "MED-101",
+					"nombre": "ANATOMIA I",
+					"creditos": "6.00",
+					"seccion": "1A",
+					"numeroSesionesTotales": 0,
+					"numeroSesionesFaltas": 0,
+					"turno": "M",
+					"docente": "GUAMAN LEON PEDRO",
+					"porcentajeFaltas": "0.00",
+					"promedioNotaFinal": "0.00",
+					"activo": 1,
+					"color": "#9E9E9E"
+				},
+				{
+					"id": 3812,
+					"codigo": "MED-102",
+					"nombre": "BIOLOGIA CELULAR",
+					"creditos": "5.00",
+					"seccion": "1A",
+					"numeroSesionesTotales": 0,
+					"numeroSesionesFaltas": 0,
+					"turno": "M",
+					"docente": "GUAMAN LEON PEDRO",
+					"porcentajeFaltas": "0.00",
+					"promedioNotaFinal": "0.00",
+					"activo": 1,
+					"color": "#9E9E9E"
 				}
 			]
 		}
